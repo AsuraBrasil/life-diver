@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4220411A-044B-4DE8-819F-AC191B6456CB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LifeDiver.SOLUTION</RootNamespace>
+    <AssemblyName>LifeDiver.SOLUTION</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmLD_Agenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLD_Agenda.Designer.cs">
+      <DependentUpon>frmLD_Agenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLD_Curso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLD_Curso.Designer.cs">
+      <DependentUpon>frmLD_Curso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLD_Equipamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLD_Equipamento.Designer.cs">
+      <DependentUpon>frmLD_Equipamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLD_Instrutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLD_Instrutor.Designer.cs">
+      <DependentUpon>frmLD_Instrutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLD_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLD_Cliente.Designer.cs">
+      <DependentUpon>frmLD_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLD_Matricula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLD_Matricula.Designer.cs">
+      <DependentUpon>frmLD_Matricula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLD_Pacote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLD_Pacote.Designer.cs">
+      <DependentUpon>frmLD_Pacote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLD_Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLD_Principal.Designer.cs">
+      <DependentUpon>frmLD_Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLD_Suplemento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLD_Suplemento.Designer.cs">
+      <DependentUpon>frmLD_Suplemento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLD_Venda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLD_Venda.Designer.cs">
+      <DependentUpon>frmLD_Venda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmLD_Agenda.resx">
+      <DependentUpon>frmLD_Agenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLD_Cliente.resx">
+      <DependentUpon>frmLD_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLD_Curso.resx">
+      <DependentUpon>frmLD_Curso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLD_Equipamento.resx">
+      <DependentUpon>frmLD_Equipamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLD_Instrutor.resx">
+      <DependentUpon>frmLD_Instrutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLD_Matricula.resx">
+      <DependentUpon>frmLD_Matricula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLD_Pacote.resx">
+      <DependentUpon>frmLD_Pacote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLD_Principal.resx">
+      <DependentUpon>frmLD_Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLD_Suplemento.resx">
+      <DependentUpon>frmLD_Suplemento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLD_Venda.resx">
+      <DependentUpon>frmLD_Venda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scuba-mask-hi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scuba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scuba1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\life diver logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LD_minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LD_minimize2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LD_maximize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LD_close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1375188665_x_alt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LD_close1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LD_bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LD_buttonCli.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LD_buttonCli1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LD_buttonInstru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LD_buttonCursos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LD_buttonPack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LD_buttonEquip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LD_buttonSuppl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LD_buttonAgenda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LD_buttonMatricular.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\080707-glossy-black-icon-business-cart5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LD_buttonShop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary1\LifeDiver.MODEL.csproj">
+      <Project>{ea23002b-4021-41b8-b297-84c637d8867e}</Project>
+      <Name>LifeDiver.MODEL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LifeDiver.CONTROL\LifeDiver.CONTROL.csproj">
+      <Project>{ef2ed952-5971-4650-82ae-ef4bebef4abb}</Project>
+      <Name>LifeDiver.CONTROL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

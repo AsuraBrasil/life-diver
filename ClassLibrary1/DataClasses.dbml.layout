@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 21.375, 13.5" name="DataClasses">
+  <DataContextMoniker Name="/DataClassesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="15e87aa2-67bb-4f04-be31-bc7d731a8f13" absoluteBounds="6.75, 10.5, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/DataClassesDataContext/VW_AGENDAMENTO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="baa7845d-2883-432d-9761-d4b3993ae064" absoluteBounds="6.765, 10.96, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="53aea0c1-2de2-4fa6-96a7-eed0a072058a" absoluteBounds="12.625, 2.625, 2, 1.9631982421875">
+      <DataClassMoniker Name="/DataClassesDataContext/VW_CURSO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d7ce8ae4-757d-4f65-9de4-ac14d5305543" absoluteBounds="12.64, 3.085, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="56b73246-5ee5-4bef-befa-cbe59c066bbf" absoluteBounds="12.5, 5.625, 2, 1.9631982421875">
+      <DataClassMoniker Name="/DataClassesDataContext/VW_CLIENTE_CURSO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="88ab0fb6-6fdb-44b0-8bad-cf6241a69bd7" absoluteBounds="12.515, 6.085, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7552cd7a-bc38-4c13-a8a0-c5bed7e0aa9a" absoluteBounds="1.125, 6.375, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/DataClassesDataContext/VW_SUPLEMENTO_PACOTE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9782d18b-6496-4372-a8aa-08f885f45376" absoluteBounds="1.1400000000000006, 6.8350000000000009, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b40995d5-a080-482f-958b-d7d631e8fbfc" absoluteBounds="6.75, 7.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DataClassesDataContext/AGENDAMENTO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="737a6142-f550-4ec1-8795-b7c88d3acb92" absoluteBounds="6.7650000000000006, 8.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5576bfa5-b207-48e4-818d-24f8b3769fd7" absoluteBounds="10.125, 8.375, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/DataClassesDataContext/CLIENTE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ca53e5c2-323d-4b85-87b2-3598aaa3a7ae" absoluteBounds="10.14, 8.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f19709cb-4f34-4396-8640-d0b233a3c39c" absoluteBounds="10.125, 5.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DataClassesDataContext/CLIENTE_CURSO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="71827a13-e114-432d-84e7-2b0b1a7e1746" absoluteBounds="10.14, 6.3350000000000009, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5587eadd-e65e-4133-897e-ecfeaf8b4299" absoluteBounds="9.875, 2.625, 2, 1.9631982421874996">
+      <DataClassMoniker Name="/DataClassesDataContext/CURSO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a86ed8cd-12d8-443c-ab5a-9c74bb24b6e1" absoluteBounds="9.89, 3.0850000000000009, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9bce08d5-c578-467c-90af-36a14431392b" absoluteBounds="19.125, 8.5, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/DataClassesDataContext/EQUIPAMENTO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="810bc4ce-9896-4edb-9e24-7a57d1a0148d" absoluteBounds="19.14, 8.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f4544aef-8e6c-45f5-8674-5127022870fd" absoluteBounds="16.125, 8.625, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/DataClassesDataContext/EQUIPAMENTO_VENDA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c1482e5f-b4d6-40eb-83a2-2ad8510526da" absoluteBounds="16.14, 9.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e70794e1-64fa-4178-b45c-d2bbf13bd4b3" absoluteBounds="7.125, 2.375, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DataClassesDataContext/INSTRUTOR" />
+      <nestedChildShapes>
+        <elementListCompartment Id="33141386-38cb-4b1c-9ace-db1b4d6c9e28" absoluteBounds="7.1400000000000006, 2.8350000000000009, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="29c81320-eeef-4098-8141-38f41f41c2f3" absoluteBounds="3.5, 8.5, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/DataClassesDataContext/PACOTE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1fb6481a-4dad-4c0b-91cd-276c6198c1f3" absoluteBounds="3.5150000000000006, 8.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="eaf888f9-7a70-405d-8ae2-cf93fb3ae339" absoluteBounds="1.125, 11, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DataClassesDataContext/SUPLEMENTO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="936e4cf0-97b0-446f-8647-5d761a5e3408" absoluteBounds="1.1400000000000006, 11.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c99dc73e-3903-443f-ab0f-9b60606e0a0d" absoluteBounds="1.125, 8.5, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/DataClassesDataContext/SUPLEMENTO_PACOTE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="95063ec8-8187-4a78-b1bf-f8481668cd4a" absoluteBounds="1.1400000000000006, 8.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(10.125 : 9.20274983723958); (8.75 : 9.20274983723958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClassesDataContext/CLIENTE/CLIENTE_AGENDAMENTO" />
+      <nodes>
+        <classShapeMoniker Id="5576bfa5-b207-48e4-818d-24f8b3769fd7" />
+        <classShapeMoniker Id="b40995d5-a080-482f-958b-d7d631e8fbfc" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.125 : 8.375); (11.125 : 7.45359537760417)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClassesDataContext/CLIENTE/CLIENTE_CLIENTE_CURSO" />
+      <nodes>
+        <classShapeMoniker Id="5576bfa5-b207-48e4-818d-24f8b3769fd7" />
+        <classShapeMoniker Id="f19709cb-4f34-4396-8640-d0b233a3c39c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.09375 : 4.5881982421875); (11.09375 : 5.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClassesDataContext/CURSO/CURSO_CLIENTE_CURSO" />
+      <nodes>
+        <classShapeMoniker Id="5587eadd-e65e-4133-897e-ecfeaf8b4299" />
+        <classShapeMoniker Id="f19709cb-4f34-4396-8640-d0b233a3c39c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(19.125 : 9.31814697265625); (18.125 : 9.31814697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClassesDataContext/EQUIPAMENTO/EQUIPAMENTO_EQUIPAMENTO_VENDA" />
+      <nodes>
+        <classShapeMoniker Id="9bce08d5-c578-467c-90af-36a14431392b" />
+        <classShapeMoniker Id="f4544aef-8e6c-45f5-8674-5127022870fd" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.125 : 3.57774983723958); (9.875 : 3.57774983723958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClassesDataContext/INSTRUTOR/INSTRUTOR_CURSO" />
+      <nodes>
+        <classShapeMoniker Id="e70794e1-64fa-4178-b45c-d2bbf13bd4b3" />
+        <classShapeMoniker Id="5587eadd-e65e-4133-897e-ecfeaf8b4299" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 9.26524983723958); (6.75 : 9.26524983723958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClassesDataContext/PACOTE/PACOTE_AGENDAMENTO" />
+      <nodes>
+        <classShapeMoniker Id="29c81320-eeef-4098-8141-38f41f41c2f3" />
+        <classShapeMoniker Id="b40995d5-a080-482f-958b-d7d631e8fbfc" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.5 : 9.19314697265625); (3.125 : 9.19314697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClassesDataContext/PACOTE/PACOTE_SUPLEMENTO_PACOTE" />
+      <nodes>
+        <classShapeMoniker Id="29c81320-eeef-4098-8141-38f41f41c2f3" />
+        <classShapeMoniker Id="c99dc73e-3903-443f-ab0f-9b60606e0a0d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.125 : 11); (2.125 : 9.8862939453125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClassesDataContext/SUPLEMENTO/SUPLEMENTO_SUPLEMENTO_PACOTE" />
+      <nodes>
+        <classShapeMoniker Id="eaf888f9-7a70-405d-8ae2-cf93fb3ae339" />
+        <classShapeMoniker Id="c99dc73e-3903-443f-ab0f-9b60606e0a0d" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="9377e26a-afa6-49cb-bbb1-144eff391a44" absoluteBounds="13.625, 8.625, 2, 1.3862939453125">
+      <DataClassMoniker Name="/DataClassesDataContext/VENDA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="176af4e9-fdd7-4b80-bab9-d07830e38b63" absoluteBounds="13.64, 9.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(15.625 : 9.31814697265625); (16.125 : 9.31814697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClassesDataContext/VENDA/VENDA_EQUIPAMENTO_VENDA" />
+      <nodes>
+        <classShapeMoniker Id="9377e26a-afa6-49cb-bbb1-144eff391a44" />
+        <classShapeMoniker Id="f4544aef-8e6c-45f5-8674-5127022870fd" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(12.125 : 9.31814697265625); (13.625 : 9.31814697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClassesDataContext/CLIENTE/CLIENTE_VENDA" />
+      <nodes>
+        <classShapeMoniker Id="5576bfa5-b207-48e4-818d-24f8b3769fd7" />
+        <classShapeMoniker Id="9377e26a-afa6-49cb-bbb1-144eff391a44" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="ab079ac2-9b19-48c3-99ee-d4e792901438" absoluteBounds="16.125, 10.375, 2, 1.9631982421875">
+      <DataClassMoniker Name="/DataClassesDataContext/VW_EQUIPVENDA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="903ece81-cfd1-4dde-95b3-fca8d939b468" absoluteBounds="16.14, 10.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

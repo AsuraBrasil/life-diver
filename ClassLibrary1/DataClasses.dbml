@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Mergulho" Class="DataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\SQLExpress;Initial Catalog=Mergulho;Integrated Security=True" SettingsObjectName="LifeDiver.MODEL.Properties.Settings" SettingsPropertyName="MergulhoConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.VW_AGENDAMENTO" Member="VW_AGENDAMENTOs">
+    <Type Name="VW_AGENDAMENTO">
+      <Column Name="CodAgendamento" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="CPFCliente" Type="System.String" DbType="NVarChar(14) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="QtdPessoas" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="DateRegistro" Type="System.DateTime" DbType="Date" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="DataAgendada" Type="System.DateTime" DbType="Date" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="QtdPessoasSemEquipamento" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="CliNome" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="PacNome" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="agendaPrecoTotal" Type="System.Decimal" DbType="Money" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Preco" Type="System.Decimal" DbType="Money" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VW_CURSO" Member="VW_CURSOs">
+    <Type Name="VW_CURSO">
+      <Column Name="InstruNome" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="CodCurso" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Nome" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Horas" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Preco" Type="System.Decimal" DbType="Money" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="NumeroPessoasTurma" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[VW_CLIENTE-CURSO]" Member="VW_CLIENTE_CURSOs">
+    <Type Name="VW_CLIENTE_CURSO">
+      <Column Name="CliNome" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="CursoNome" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="CodCurso" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="CPFCliente" Type="System.String" DbType="NVarChar(14) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="DataMatricula" Type="System.DateTime" DbType="Date" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Turma" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[VW_SUPLEMENTO-PACOTE]" Member="VW_SUPLEMENTO_PACOTEs">
+    <Type Name="VW_SUPLEMENTO_PACOTE">
+      <Column Name="CodPacote" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="CodSuplemento" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Quantidade" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Nome" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="QtdDisponivel" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AGENDAMENTO" Member="AGENDAMENTOs">
+    <Type Name="AGENDAMENTO">
+      <Column Name="CodAgendamento" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="CPFCliente" Type="System.String" DbType="NVarChar(14) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="CodPacote" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="QtdPessoas" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="DateRegistro" Type="System.DateTime" DbType="Date" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="DataAgendada" Type="System.DateTime" DbType="Date" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="QtdPessoasSemEquipamento" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="CLIENTE_AGENDAMENTO" Member="CLIENTE" ThisKey="CPFCliente" OtherKey="CPF" Type="CLIENTE" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="PACOTE_AGENDAMENTO" Member="PACOTE" ThisKey="CodPacote" OtherKey="CodPacote" Type="PACOTE" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CLIENTE" Member="CLIENTEs">
+    <Type Name="CLIENTE">
+      <Column Name="CPF" Type="System.String" DbType="NVarChar(14) NOT NULL" IsPrimaryKey="true" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Nome" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Endereço" Type="System.String" DbType="NVarChar(80)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Telefone" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="[E-mail]" Member="E_mail" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="Date" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="CLIENTE_AGENDAMENTO" Member="AGENDAMENTOs" ThisKey="CPF" OtherKey="CPFCliente" Type="AGENDAMENTO" />
+      <Association Name="CLIENTE_CLIENTE_CURSO" Member="CLIENTE_CURSOs" ThisKey="CPF" OtherKey="CPFCliente" Type="CLIENTE_CURSO" />
+      <Association Name="CLIENTE_VENDA" Member="VENDAs" ThisKey="CPF" OtherKey="CPFCliente" Type="VENDA" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[CLIENTE-CURSO]" Member="CLIENTE_CURSOs">
+    <Type Name="CLIENTE_CURSO">
+      <Column Name="CodCurso" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="CPFCliente" Type="System.String" DbType="NVarChar(14) NOT NULL" IsPrimaryKey="true" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="DataMatricula" Type="System.DateTime" DbType="Date" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Turma" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="CLIENTE_CLIENTE_CURSO" Member="CLIENTE" ThisKey="CPFCliente" OtherKey="CPF" Type="CLIENTE" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="CURSO_CLIENTE_CURSO" Member="CURSO" ThisKey="CodCurso" OtherKey="CodCurso" Type="CURSO" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CURSO" Member="CURSOs">
+    <Type Name="CURSO">
+      <Column Name="CodCurso" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Nome" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="CPFInstrutor" Type="System.String" DbType="NVarChar(14) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Horas" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Preco" Type="System.Decimal" DbType="Money" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="NumeroPessoasTurma" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="CURSO_CLIENTE_CURSO" Member="CLIENTE_CURSOs" ThisKey="CodCurso" OtherKey="CodCurso" Type="CLIENTE_CURSO" />
+      <Association Name="INSTRUTOR_CURSO" Member="INSTRUTOR" ThisKey="CPFInstrutor" OtherKey="CPF" Type="INSTRUTOR" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EQUIPAMENTO" Member="EQUIPAMENTOs">
+    <Type Name="EQUIPAMENTO">
+      <Column Name="CodEquipamento" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Nome" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Tipo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="QtdEstoque" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Preco" Type="System.Decimal" DbType="Money" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="EQUIPAMENTO_EQUIPAMENTO_VENDA" Member="EQUIPAMENTO_VENDAs" ThisKey="CodEquipamento" OtherKey="CodEquipamento" Type="EQUIPAMENTO_VENDA" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[EQUIPAMENTO-VENDA]" Member="EQUIPAMENTO_VENDAs">
+    <Type Name="EQUIPAMENTO_VENDA">
+      <Column Name="CodVenda" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="CodEquipamento" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Quantidade" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="EQUIPAMENTO_EQUIPAMENTO_VENDA" Member="EQUIPAMENTO" ThisKey="CodEquipamento" OtherKey="CodEquipamento" Type="EQUIPAMENTO" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="VENDA_EQUIPAMENTO_VENDA" Member="VENDA" ThisKey="CodVenda" OtherKey="CodVenda" Type="VENDA" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.INSTRUTOR" Member="INSTRUTORs">
+    <Type Name="INSTRUTOR">
+      <Column Name="CPF" Type="System.String" DbType="NVarChar(14) NOT NULL" IsPrimaryKey="true" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Nome" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Endereço" Type="System.String" DbType="NVarChar(80)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Telefone" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="[E-mail]" Member="E_mail" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="Date" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Certificado" Type="System.Boolean" DbType="Bit" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="INSTRUTOR_CURSO" Member="CURSOs" ThisKey="CPF" OtherKey="CPFInstrutor" Type="CURSO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PACOTE" Member="PACOTEs">
+    <Type Name="PACOTE">
+      <Column Name="CodPacote" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Nome" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Local" Type="System.String" DbType="NVarChar(80)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="NumeroPessoasMax" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Preco" Type="System.Decimal" DbType="Money" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="PACOTE_AGENDAMENTO" Member="AGENDAMENTOs" ThisKey="CodPacote" OtherKey="CodPacote" Type="AGENDAMENTO" />
+      <Association Name="PACOTE_SUPLEMENTO_PACOTE" Member="SUPLEMENTO_PACOTEs" ThisKey="CodPacote" OtherKey="CodPacote" Type="SUPLEMENTO_PACOTE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SUPLEMENTO" Member="SUPLEMENTOs">
+    <Type Name="SUPLEMENTO">
+      <Column Name="CodSuplemento" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Nome" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Tipo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="QtdDisponivel" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="SUPLEMENTO_SUPLEMENTO_PACOTE" Member="SUPLEMENTO_PACOTEs" ThisKey="CodSuplemento" OtherKey="CodSuplemento" Type="SUPLEMENTO_PACOTE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[SUPLEMENTO-PACOTE]" Member="SUPLEMENTO_PACOTEs">
+    <Type Name="SUPLEMENTO_PACOTE">
+      <Column Name="CodPacote" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="CodSuplemento" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Quantidade" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="PACOTE_SUPLEMENTO_PACOTE" Member="PACOTE" ThisKey="CodPacote" OtherKey="CodPacote" Type="PACOTE" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="SUPLEMENTO_SUPLEMENTO_PACOTE" Member="SUPLEMENTO" ThisKey="CodSuplemento" OtherKey="CodSuplemento" Type="SUPLEMENTO" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VENDA" Member="VENDAs">
+    <Type Name="VENDA">
+      <Column Name="CodVenda" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="CPFCliente" Type="System.String" DbType="NVarChar(14) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="DataVenda" Type="System.DateTime" DbType="Date" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="VENDA_EQUIPAMENTO_VENDA" Member="EQUIPAMENTO_VENDAs" ThisKey="CodVenda" OtherKey="CodVenda" Type="EQUIPAMENTO_VENDA" />
+      <Association Name="CLIENTE_VENDA" Member="CLIENTE" ThisKey="CPFCliente" OtherKey="CPF" Type="CLIENTE" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VW_EQUIPVENDA" Member="VW_EQUIPVENDAs">
+    <Type Name="VW_EQUIPVENDA">
+      <Column Name="CodVenda" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="CodEquipamento" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Quantidade" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Nome" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Preco" Type="System.Decimal" DbType="Money" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="PrecoTotal" Type="System.Decimal" DbType="Money" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+</Database>

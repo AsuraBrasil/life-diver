@@ -1,0 +1,6 @@
+C:\Users\ASURA\documents\visual studio 2013\Projects\LifeDiver.SOLUTION\ClassLibrary1\bin\Debug\LifeDiver.MODEL.dll.config
+C:\Users\ASURA\documents\visual studio 2013\Projects\LifeDiver.SOLUTION\ClassLibrary1\bin\Debug\LifeDiver.MODEL.dll
+C:\Users\ASURA\documents\visual studio 2013\Projects\LifeDiver.SOLUTION\ClassLibrary1\bin\Debug\LifeDiver.MODEL.pdb
+C:\Users\ASURA\documents\visual studio 2013\Projects\LifeDiver.SOLUTION\ClassLibrary1\obj\Debug\LifeDiver.MODEL.dll
+C:\Users\ASURA\documents\visual studio 2013\Projects\LifeDiver.SOLUTION\ClassLibrary1\obj\Debug\LifeDiver.MODEL.pdb
+C:\Users\ASURA\documents\visual studio 2013\Projects\LifeDiver.SOLUTION\ClassLibrary1\obj\Debug\LifeDiver.MODEL.csprojResolveAssemblyReference.cache
